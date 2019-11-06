@@ -9,3 +9,5 @@ Usage: The usage of this is just for me to practice HTML and CSS. It could be us
 Credits: I created this code based on the homework prompt created by Triology Education Services.
 
 Contributing: I was the only one to work on this project.
+
+Live site: https://sirpotatoiv.github.io/portfolio-practice/
