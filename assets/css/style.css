@@ -2,6 +2,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 /* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
@@ -12,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    height: 50px;
 }
 
 .logo {
@@ -32,18 +34,31 @@
     color: white;
 }
 
+.main {
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 20px auto;
+    height: 600px;
+}
+
 .footer {
     flex: 0 0 100%;
     /*found out this is needed to get the justify-content property to work*/
     display: flex;
     justify-content: center;
-}
-
-.main {
-    /* display: flex; */
-    /* justify-content: center; */
+    align-items: center;
+    background-color: black;
+    border-top: 2px red solid;
+    color: white;
+    height: 50px;
 }
 
 header {
-    border-bottom: 1px black solid;
+    flex: 0 0 100%;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
