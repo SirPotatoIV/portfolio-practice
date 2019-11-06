@@ -10,6 +10,26 @@
     display: flex;
     /*found this in the css-tricks flex tutorial*/
     justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    background: blue;
+    color: white;
+    font-size: 2em;
+    margin: 0px 0px 0px 40px;
+}
+
+.menu {
+    margin: 0px 40px 0px
+}
+
+/*using to add lines to the left of the links in the menu */
+.menu a {
+    padding: 5px;
+    border-right: 1px white solid;
+    color: white;
 }
 
 .footer {
@@ -17,4 +37,13 @@
     /*found out this is needed to get the justify-content property to work*/
     display: flex;
     justify-content: center;
+}
+
+.main {
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+header {
+    border-bottom: 1px black solid;
 }
