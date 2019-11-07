@@ -1,17 +1,30 @@
+h1 {
+    font-family: bowlby one sc;
+}
+
+h2 {
+    font-family: raleway;
+}
+
+p, a{
+    font-family: 'slabo 27px';
+}
+
 /* main container for adding flex to pages */
 .container {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 /* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
 .top {
     flex: 0 0 100%;
     display: flex;
-    /*found this in the css-tricks flex tutorial*/
+    /* found this in the css-tricks flex tutorial */
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0px auto 0px auto;
     background-color: black;
     height: 50px;
 }
@@ -24,7 +37,8 @@
 }
 
 .menu {
-    margin: 0px 40px 0px
+    margin: 0px 40px 0px;
+    /* font-family: salbo 27px; */
 }
 
 /*using to add lines to the left of the links in the menu */
@@ -39,7 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: 50px auto 50px auto;
+    width: 480px;
     height: 600px;
+    padding: 10px;
 }
 
 .footer {
