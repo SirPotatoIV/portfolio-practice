@@ -6,6 +6,12 @@
     --header-footer-border: 2px rgb(58, 58, 58) solid;
 }
 
+/* Got image from https://www.toptal.com/designers/subtlepatterns/herringbone-pattern/ */
+/* Created by Myriam Lefebvre https://myriamlefebvre.ca/ */
+body {
+    background-image: url(../images/herringbone.png);
+}
+
 /* adds font to h1*/
 h1 {
     font-family: 'bowlby one sc';
