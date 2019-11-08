@@ -6,6 +6,25 @@
     --header-footer-border: 2px rgb(58, 58, 58) solid;
 }
 
+/* adds font to h1*/
+h1 {
+    font-family: 'bowlby one sc';
+}
+
+/* adds style to h2's */
+h2 {
+    font-size: 40px;
+    font-family: 'slabo 27px';
+    align-items: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* adding font to p and a*/
+p, a, label, button{
+    font-family: 'Raleway';
+}
+
 /* Container and main together allow for all content to be centered and wrapped, but also for it to not compress and change shape due to window sizing*/
 .container {
     display: flex;
@@ -135,6 +154,11 @@ section * {
     right: 12px;
     width: calc(100%-24px);
     background-color: salmon;
+    
+}
+
+.image-title h2 {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -195,19 +219,5 @@ footer {
     width:100%;
 }
 
-/* adds font size to h2's */
-h2 {
-    font-size: 30px;
-    align-items: center; */
-}
 
-/* adds font to all h1 and h2's */
-h1, h2 {
-    font-family: bowlby one sc;
-}
-
-/* adding font to p and a*/
-p, a, label, button{
-    font-family: 'slabo 27px';
-}
 
