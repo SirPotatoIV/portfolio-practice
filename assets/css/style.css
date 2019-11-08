@@ -121,6 +121,43 @@ form *{
     width: 100%;
 }
 
+/* all below button selectors used to format and also clear agent formating. Found basis of code on https://css-tricks.com/overriding-default-button-styles/*/
+button {
+    width: fit-content;
+    display: inline-block;
+    border: none;
+    padding: 4px 32px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #000000;
+    color: #ffffff;
+    /* font-family: sans-serif; */
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 2px 2px white;
+}
+
+button:hover, button:focus {
+    /* background: #0053ba; */
+    background: white;
+    color: black;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
 /* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
 footer {
     flex: 0 0 100%;
@@ -152,7 +189,7 @@ h1, h2 {
 
 
 /* adding font to p and a*/
-p, a, label{
+p, a, label, button{
     font-family: 'slabo 27px';
 }
 
