@@ -1,6 +1,8 @@
 /*variables*/
 :root {
+    /* created to be able to change overall content width in one spot*/
     --content-width: 960px;
+    /* created to be able to keep the border bottom of header and border top of bottom consistent*/ 
     --header-footer-border: 2px rgb(58, 58, 58) solid;
 }
 
@@ -19,7 +21,6 @@
 header {
     display: flex;
     flex: 0 0 100%;
-    /* justify-content: space-between; */
     align-items: center;
     margin: 0px auto 0px auto;
     justify-content: center;
@@ -52,7 +53,6 @@ header {
 /* menu is a child of header and the far right div in the header*/
 .menu {
     margin: 0px 40px 0px;
-    /* font-family: salbo 27px; */
 }
 
 /*adds lines to the left of the links in the menu and styles a's */
@@ -74,10 +74,8 @@ section {
     background-color: gray;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     margin: 50px 0px 200px 0px;
     width: var(--content-width);
-    /* height: 600px; */
     padding: 10px;
     box-shadow: 5px 10px;
 }
@@ -93,11 +91,9 @@ section * {
     border-bottom: 1px black solid;
 }
 
+/*used to get the positioning of the top paragraph and image to align correctly */
 .top-p {
-    display: flex;
-    /* flex: 0 0 100%; */
-    /* height: 100px; */
-    
+    display: flex;    
 }
 
 /* used to style image in index.html*/
@@ -112,6 +108,7 @@ section * {
     margin: 0px 0px 0px 0px;
 }
 
+/* used to style image in portfolio.html separate from index.html images*/
 .image-collection {
     margin: 4px;
     display: flex;
@@ -124,11 +121,13 @@ section * {
     margin: 12px;
 }
 
+/* used to add title over portfolio images*/
 .single-image {
     position: relative;
     margin: 0px;
 }
 
+/* used to add title over portfolio images and style title*/
 .image-title {
     position: absolute;
     bottom: 12px;
@@ -160,7 +159,6 @@ button {
     text-transform: uppercase;
     background: #000000;
     color: #ffffff;
-    /* font-family: sans-serif; */
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
@@ -172,7 +170,6 @@ button {
 }
 
 button:hover, button:focus {
-    /* background: #0053ba; */
     background: white;
     color: black;
 }
@@ -201,7 +198,6 @@ footer {
 /* adds font size to h2's */
 h2 {
     font-size: 30px;
-    /* display: flex;
     align-items: center; */
 }
 
@@ -209,7 +205,6 @@ h2 {
 h1, h2 {
     font-family: bowlby one sc;
 }
-
 
 /* adding font to p and a*/
 p, a, label, button{
