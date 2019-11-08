@@ -25,6 +25,10 @@ p, a, label, button{
     font-family: 'Raleway';
 }
 
+p {
+    font-size: 20px;
+}
+
 /* Container and main together allow for all content to be centered and wrapped, but also for it to not compress and change shape due to window sizing*/
 .container {
     display: flex;
@@ -206,7 +210,6 @@ button:active {
 /* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
 footer {
     flex: 0 0 100%;
-    /*found out this is needed to get the justify-content property to work*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,6 +221,10 @@ footer {
     color: white;
     height: 50px;
     width:100%;
+}
+
+footer p{
+    font-size: 12px;
 }
 
 
