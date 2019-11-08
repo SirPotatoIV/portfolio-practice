@@ -1,35 +1,3 @@
-
-h1, h2 {
-    font-family: bowlby one sc;
-}
-
-h2 {
-    font-size: 30px;
-    /* display: flex;
-    align-items: center; */
-}
-
-.headline {
-    flex: 0 0 100%;
-    border-bottom: 1px black solid;
-}
-
-img {
-    height: 100px;
-    width: 90px;
-}
-
-a:last-child {
-    border: 0px black solid;
-}
-p, a{
-    font-family: 'slabo 27px';
-}
-
-body {
-    /* display: flex; */
-    /* justify-content: center; */
-}
 /* main container for adding flex to pages */
 .main {
     display: flex;
@@ -38,19 +6,18 @@ body {
     margin: 0px auto 0px auto;
 }
 
+
 /* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
 header {
     display: flex;
-    /* found this in the css-tricks flex tutorial */
     flex: 0 0 100%;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
     margin: 0px auto 0px auto;
     background-color: gray;
     height: 50px;
 }
-
+/* logo is a child of header and the far left div in the header*/
 .logo {
     display: flex;
     align-items: center;
@@ -62,13 +29,13 @@ header {
     padding: 0px 5px 0px 5px;
     height: 80%;
 }
-
+/* menu is a child of header and the far right div in the header*/
 .menu {
     margin: 0px 40px 0px;
     /* font-family: salbo 27px; */
 }
 
-/*using to add lines to the left of the links in the menu */
+/*adds lines to the left of the links in the menu and styles a's */
 .menu a {
     padding: 5px;
     border-right: 2px white solid;
@@ -77,6 +44,12 @@ header {
     letter-spacing: 2px;
 }
 
+/* removes border from last link in menu to get rid of the vertical line to the right*/
+.menu a:last-child {
+    border: 0px black solid;
+}
+
+/* section is the child of main. contains everything but the header and footer */
 section {
     background-color: gray;
     display: flex;
@@ -88,10 +61,18 @@ section {
     box-shadow: 5px 10px;
 }
 
+/* adds margin to top and bottom to all children of section. */
 section * {
     margin: 10px 0px 10px 0px;
 }
 
+/* child of main. contains the title of the text in main */
+.headline {
+    flex: 0 0 100%;
+    border-bottom: 1px black solid;
+}
+
+/* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
 footer {
     flex: 0 0 100%;
     /*found out this is needed to get the justify-content property to work*/
@@ -107,3 +88,26 @@ footer {
     height: 50px;
     width:100%;
 }
+
+/* adds font size to h2's */
+h2 {
+    font-size: 30px;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* adds font to all h1 and h2's */
+h1, h2 {
+    font-family: bowlby one sc;
+}
+
+img {
+    height: 100px;
+    width: 90px;
+}
+
+/* adding font to p and a*/
+p, a{
+    font-family: 'slabo 27px';
+}
+
