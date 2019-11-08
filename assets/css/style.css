@@ -100,12 +100,23 @@ section * {
     
 }
 
-.image {
+.image-par {
     height: 100%;
 }
 
-img {
+.image-par img {
     height: 150px;
+    /* width: 90px; */
+    padding-right: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+.image-collection {
+    margin: 4px;
+}
+
+.image-collection img {
+    height: 300px;
     /* width: 90px; */
     padding-right: 12px;
     margin: 0px 0px 0px 0px;
