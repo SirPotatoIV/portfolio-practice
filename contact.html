@@ -5,44 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jake's Portfolio</title>
+    <!--links to css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Raleway|Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!--div used to apply flex properties to this page-->
+    <!--Used to get conents of all children to stop changing height when page size is adjusted-->
     <div class="container">
-        <!--logo in top right corner-->
-        <div class="logo">Jake O'Toole</div>
-        <!--menu/nav bar in top right corner-->
-        <div class="menu">
-            <a href="index.html">About</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="./contact.html">Contact</a>
-        </div>
-        <!--main section of page that contains primary content-->
+            <!--main page container to apply flex properties to this page-->
             <div class="main">
-            <!--header for primary content. Assignment said to use headers.-->
-            <header>
-                <h1>Contact</h1>
-            </header>
-            <!--parent for all of the inputs in the contacts page-->
-            <form action="">
-                <!--input for name-->
-                <label for="name">Name</label><br/>
-                <input type="text" name="name"/><br/>
-                
-                <!--input for email address. found email tag on w3 input page-->
-                <label for="email">Email</label><br/>
-                <input type="email" name="email"><br/>
-                
-                <!--input for message. found tag on stackflow. unsure if correct tag-->
-                <label for="message">Message</label><br/>
-                <textarea name="message" cols="40" rows="5"></textarea>
-            </form>
+                <!--header of the page. Contains 2 sub divs for the logo and menu.-->
+                <header>
+                <div class="header-content">
+                        <!--logo in top right corner-->
+                        <div class="logo"><h1>Jake O'Toole</h1></div>
+                        <!--menu/nav bar in top right corner-->
+                        <div class="menu">
+                            <a href="./index.html">About</a>
+                            <a href="./portfolio.html">Portfolio</a>
+                            <a href="./contact.html">Contact</a>
+                        </div>
+                    </div>
+                </header>
+                <!--section of page that contains primary content-->
+                <!--will probably need a sub-container to create the profile pic next to text.-->
+                <section>
+                    <!--headline for primary content. Assignment said to use headers.-->
+                    <div class="headline">
+                        <h2>Contact</h2>
+                    </div>    
+                    <form action="">
+                        <!--input for name-->
+                        <label for="name">Name</label><br/>
+                        <input type="text" name="name"/><br/>
+                        
+                        <!--input for email address. found email tag on w3 input page-->
+                        <label for="email">Email</label><br/>
+                        <input type="email" name="email"><br/>
+                        
+                        <!--input for message. found tag on stackflow. unsure if correct tag-->
+                        <label for="message">Message</label><br/>
+                        <textarea name="message" cols="40" rows="5"></textarea>
+                    </form>
+                </section>
+            </div>
         </div>
-        <!--footer section of page at bottom of page-->
-    </div>
+        <!--footer of page -->
+        <footer>
+            <p>&copy;Copyright Jake O'Toole</p>
+        </footer>
     
-    <div class="footer">
-        Copyright Jake O'Toole
-    </div>
+    </body>
+    </html>                    
+
 </body>
 </html>
