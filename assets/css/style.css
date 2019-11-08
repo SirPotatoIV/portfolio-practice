@@ -112,14 +112,31 @@ section * {
     margin: 0px 0px 0px 0px;
 }
 
-/* .image-collection {
+.image-collection {
     margin: 4px;
-} */
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* used to style image in portfolio.html separate from index.html images*/
 .image-collection img {
     height: 300px;
     margin: 12px;
+}
+
+.single-image {
+    position: relative;
+    margin: 0px;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    width: calc(100%-24px);
+    background-color: salmon;
+    text-align: center;
 }
 
 /* used to get input elements to be the width of section*/
