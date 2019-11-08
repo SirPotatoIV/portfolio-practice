@@ -114,6 +114,14 @@ img {
     margin: 0px 0px 0px 0px;
 }
 
+form {
+    width: 100%;
+}
+
+form *{
+    width: 100%;
+}
+
 /* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
 footer {
     flex: 0 0 100%;
@@ -145,7 +153,7 @@ h1, h2 {
 
 
 /* adding font to p and a*/
-p, a{
+p, a, label{
     font-family: 'slabo 27px';
 }
 
