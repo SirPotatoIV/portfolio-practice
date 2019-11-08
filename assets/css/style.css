@@ -1,20 +1,43 @@
+/*variables*/
+:root {
+    --content-width: 960px;
+    --header-footer-border: 2px rgb(58, 58, 58) solid;
+}
+
 /* main container for adding flex to pages */
+.container {
+    display: flex;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
-    margin: 0px auto 0px auto;
+    justify-content: center;
+    /* width: 960px; */
+    /* width: 100%; */
+    /* margin: 0px auto 0px auto; */
 }
 
 /* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
 header {
     display: flex;
     flex: 0 0 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin: 0px auto 0px auto;
+    justify-content: center;
     background-color: gray;
     height: 50px;
+    border-bottom: var(--header-footer-border);
+}
+
+.header-content {
+    display: flex;
+    flex: 0 0 var(--content-width);
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* logo is a child of header and the far left div in the header*/
@@ -25,9 +48,8 @@ header {
     border-radius: 10px;
     color: white;
     font-size: 2em;
-    margin: 0px 0px 0px 40px;
     padding: 0px 5px 0px 5px;
-    height: 80%;
+    height: 100%;
 }
 
 /* menu is a child of header and the far right div in the header*/
@@ -55,8 +77,9 @@ section {
     background-color: gray;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto 200px auto;
-    width: 480px;
+    /* flex-direction: column; */
+    margin: 50px 0px 200px 0px;
+    width: var(--content-width);
     /* height: 600px; */
     padding: 10px;
     box-shadow: 5px 10px;
@@ -75,6 +98,7 @@ section * {
 
 .top-p {
     display: flex;
+    /* flex: 0 0 100%; */
     /* height: 100px; */
     
 }
@@ -87,6 +111,7 @@ img {
     height: 150px;
     /* width: 90px; */
     padding-right: 12px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
@@ -100,7 +125,7 @@ footer {
     bottom: 0px;
     margin: 0px;
     background-color: black;
-    border-top: 2px gray solid;
+    border-top: var(--header-footer-border);
     color: white;
     height: 50px;
     width:100%;
