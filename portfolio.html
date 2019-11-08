@@ -5,38 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jake's Portfolio</title>
+    <!--links to css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Raleway|Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!--div used to apply flex properties to this page-->
+    <!--Used to get conents of all children to stop changing height when page size is adjusted-->
     <div class="container">
-        <!--logo in top right corner-->
-        <div class="logo">Jake O'Toole</div>
-        <!--menu/nav bar in top right corner-->
-        <div class="menu">
-            <a href="./index.html">About</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="./contact.html">Contact</a>
-        </div>
-        <!--main section of page that contains primary content-->
-        <!--current assumption is that this div will also need to be a container to get the images to flex-->
-        <div class="main container-menu">
-            <!--header for primary content. Assignment said to use headers.-->
+        <!--main page container to apply flex properties to this page-->
+        <div class="main">
+            <!--header of the page. Contains 2 sub divs for the logo and menu.-->
             <header>
-                <h1>Portfolio</h1>
+               <div class="header-content">
+                    <!--logo in top right corner-->
+                    <div class="logo"><h1>Jake O'Toole</h1></div>
+                    <!--menu/nav bar in top right corner-->
+                    <div class="menu">
+                        <a href="./index.html">About</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
             </header>
-            <!--images of portfolio examples-->
-            <!--current assumption is that each img will need to be put into a div to add text overlay-->
-            <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" width="100" height="100">
-            <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" width="100" height="100">
-            <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" width="100" height="100">
-            <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" width="100" height="100">
-            <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" width="100" height="100">
+                <!--section of page that contains primary content-->
+            <section>
+                    <!--headline for primary content. Assignment said to use headers.-->
+                <div class="headline">
+                    <h2>About Me</h2>
+                </div>
+                <!--images of portfolio examples-->
+                <!--current assumption is that each img will need to be put into a div to add text overlay-->
+                <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" height="150px">
+                <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" height="150px">
+                <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" height="150px">
+                <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" height="150px">
+                <img src="./assets/images/profile-pic.png" alt="small screenshot of project example" height="150px">
+            </section>
         </div>
-        <!--footer section of page at bottom of page-->
-        <footer>
-            Copyright Jake O'Toole
-        </footer>
-    </div>
+    </div>  
+    <!--footer of page -->
+    <footer>
+        <p>&copy;Copyright Jake O'Toole</p>
+    </footer>
 
 </body>
 </html>
