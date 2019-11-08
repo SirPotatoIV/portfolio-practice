@@ -4,7 +4,7 @@
     --header-footer-border: 2px rgb(58, 58, 58) solid;
 }
 
-/* main container for adding flex to pages */
+/* Container and main together allow for all content to be centered and wrapped, but also for it to not compress and change shape due to window sizing*/
 .container {
     display: flex;
 }
@@ -13,12 +13,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 960px; */
-    /* width: 100%; */
-    /* margin: 0px auto 0px auto; */
 }
 
-/* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
+/*combo of header and .header-conent allow for background color to be full width of page and header content to be 960px and justified-center with all other elements*/
 header {
     display: flex;
     flex: 0 0 100%;
@@ -90,7 +87,7 @@ section * {
     margin: 10px 0px 10px 0px;
 }
 
-/* child of main. contains the title of the text in main */
+/* child of main. contains the title of the text in main. Causes div to be full width of .main. */
 .headline {
     flex: 0 0 100%;
     border-bottom: 1px black solid;
@@ -114,10 +111,12 @@ img {
     margin: 0px 0px 0px 0px;
 }
 
+/* used to get input elements to be the width of section*/
 form {
     width: 100%;
 }
 
+/* used to get input elements to be the width of section*/
 form *{
     width: 100%;
 }
