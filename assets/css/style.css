@@ -100,26 +100,26 @@ section * {
     
 }
 
+/* used to style image in index.html*/
 .image-par {
     height: 100%;
 }
 
+/* used to style image in index.html separate from portfolio.html images*/
 .image-par img {
     height: 150px;
-    /* width: 90px; */
     padding-right: 12px;
     margin: 0px 0px 0px 0px;
 }
 
-.image-collection {
+/* .image-collection {
     margin: 4px;
-}
+} */
 
+/* used to style image in portfolio.html separate from index.html images*/
 .image-collection img {
     height: 300px;
-    /* width: 90px; */
-    padding-right: 12px;
-    margin: 0px 0px 0px 0px;
+    margin: 12px;
 }
 
 /* used to get input elements to be the width of section*/
