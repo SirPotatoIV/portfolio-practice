@@ -6,7 +6,6 @@
     margin: 0px auto 0px auto;
 }
 
-
 /* top has flex applied from .container, but is also applying flex to .logo and .menu */ 
 header {
     display: flex;
@@ -17,6 +16,7 @@ header {
     background-color: gray;
     height: 50px;
 }
+
 /* logo is a child of header and the far left div in the header*/
 .logo {
     display: flex;
@@ -29,6 +29,7 @@ header {
     padding: 0px 5px 0px 5px;
     height: 80%;
 }
+
 /* menu is a child of header and the far right div in the header*/
 .menu {
     margin: 0px 40px 0px;
@@ -72,6 +73,22 @@ section * {
     border-bottom: 1px black solid;
 }
 
+.top-p {
+    display: flex;
+    /* height: 100px; */
+    
+}
+
+.image {
+    height: 100%;
+}
+
+img {
+    height: 150px;
+    /* width: 90px; */
+    padding-right: 12px;
+}
+
 /* footer is only a child of body. This was done to get the footer to stay fixed to the bottom of the page. */
 footer {
     flex: 0 0 100%;
@@ -101,10 +118,6 @@ h1, h2 {
     font-family: bowlby one sc;
 }
 
-img {
-    height: 100px;
-    width: 90px;
-}
 
 /* adding font to p and a*/
 p, a{
